@@ -1,0 +1,18 @@
+<ul class="latest-posts-list">
+	{%- for post in collections.post -%}
+	<li>
+		<a href="{{ post.url | url }}" class="postlist-link">
+			<span>
+				{% if post.data.title %}
+					{{ post.data.title }}
+				{% else %}
+					<code>{{ post.url }}</code>
+				{% endif %}
+			</span>
+			<date class="postlist-post-date">{{post.data.date | toDate}}</date>
+		</a>
+	</li>
+	{%- endfor -%}
+</ul>
+
+

@@ -1,0 +1,34 @@
+---
+title: bogdanpetru.com
+---
+
+{% set defaultCSS %}
+	{% include "styles/fonts.css" %}
+	{% include "styles/variables.css" %}
+  	{% include "styles/defaults.css" %}
+	{% include "styles/base.css" %}
+	{% include "styles/prism-light.css" %}
+	{% include "styles/prism-dark.css" %}
+{% endset %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{title}}</title>
+
+		<style>
+  			{{ defaultCSS | cssmin | safe }}
+		</style>
+	</head>
+	<body class="light">
+		<main>
+			{% include 'elements/theme-button.njk' %}
+			{% include 'elements/sidebar.njk' %}
+			{{ content | safe }}
+		</main>
+	</body>
+	<script src="{{ "bundle.js" | url }}"></script>
+</html>	
+
+

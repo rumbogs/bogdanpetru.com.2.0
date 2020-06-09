@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+	margin: 0;
+	background-color: var(--color-background);
+	color: var(--color-font-base);
+	font-family: var(--font-body);
+	font-size: var(--font-size-small);
+	line-height: 1.5;
+}
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 500;
+}
+small {
+	font-size: 75%;
+}
+
+p {
+	margin: 1.5em 0;
+}
+
+li {
+	line-height: 1.5em;
+}
+
+a {
+	display: inline-block;
+	color: var(--color-font-base);
+}
+
+figure {
+	margin: 0;
+	width: var(--main-width);
+	max-width: 100%;
+}
+
+figcaption {
+	font-size: 0.7em;
+	text-align: right;
+}
+
+img {
+	width: 100%;
+}
+
+canvas {
+	display: block;
+}
+
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+	content: "";
+}
+
+@media only screen and (min-width: 992px) {
+	html,
+	body {
+		font-size: var(--font-size-large);
+	}
+}

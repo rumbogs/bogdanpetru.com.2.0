@@ -1,0 +1,27 @@
+:root {
+	--small-screen: 600px;
+	--medium-screen: 992px;
+	--large-screen: 1200px;
+
+	--font-size-small: 14px;
+	--font-size-large: 18px;
+
+	--main-width: 64rem;
+	--main-padding: 50px;
+
+	--color-grey: #afafaf;
+	--color-background: #fafafa;
+	--color-font-base: #191718;
+
+	--font-heading-subset: LibreFranklinSubset, Helvetica, Arial, sans-serif;
+	--font-body-subset: LibreBaskervilleSubset, Georgia, Times New Roman, Times,
+		serif;
+	--font-heading: LibreFranklin, Helvetica, Arial, sans-serif;
+	--font-body: LibreBaskerville, Georgia, Times New Roman, Times, serif;
+}
+
+.dark {
+	--color-grey: #afafaf;
+	--color-background: #191718;
+	--color-font-base: #e0e0e0;
+}

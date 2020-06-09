@@ -1,0 +1,263 @@
+/****************************** FONTS *************************************/
+
+body {
+	font-family: sans-serif;
+}
+
+.fonts-stage-1 body {
+	font-family: var(--font-body-subset);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.fonts-stage-1 h1,
+.fonts-stage-1 h2,
+.fonts-stage-1 h3,
+.fonts-stage-1 h4,
+.fonts-stage-1 h5,
+.fonts-stage-1 h6 {
+	font-family: var(--font-heading-subset);
+	font-weight: 600;
+}
+
+.fonts-stage-2 body {
+	font-family: var(--font-body);
+}
+
+.fonts-stage-2 h1,
+.fonts-stage-2 h2,
+.fonts-stage-2 h3,
+.fonts-stage-2 h4,
+.fonts-stage-2 h5,
+.fonts-stage-2 h6 {
+	font-family: var(--font-heading);
+}
+
+h1 {
+	font-size: 4.2em;
+	line-height: 110%;
+	margin: 2.8em 0 1.68em 0;
+}
+
+h2 {
+	font-size: 3.56em;
+	line-height: 110%;
+	margin: 2.37em 0 1.424em 0;
+}
+
+h3 {
+	font-size: 2.92em;
+	line-height: 110%;
+	margin: 1.95em 0 1.168em 0;
+}
+
+h4 {
+	font-size: 2.28em;
+	line-height: 110%;
+	margin: 1.52em 0 0.912em 0;
+}
+
+h5 {
+	font-size: 1.64em;
+	line-height: 110%;
+	margin: 1.09em 0 0.656em 0;
+}
+
+h6 {
+	font-size: 1.15em;
+	line-height: 110%;
+	margin: 0.766em 0 0.46em 0;
+}
+
+/****************************** LAYOUT *************************************/
+
+body {
+	transition: color 0.3s, background-color 0.3s;
+}
+
+a {
+	transition: color 0.3s;
+}
+
+p {
+	max-width: 35em;
+}
+
+main {
+	margin: 0 auto;
+	max-width: var(--main-width);
+	width: 90%;
+	display: flex;
+}
+
+aside {
+	flex: 1;
+	min-width: 16em;
+}
+
+pre {
+	border-radius: 10px;
+}
+
+code {
+	padding: 5px 10px;
+	border-radius: 0.45em;
+}
+
+.sidebar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.site-title {
+	text-decoration: none;
+}
+
+.site-title:hover {
+	text-decoration: underline;
+}
+
+section {
+	flex: 2.5;
+}
+
+.post-wrapper {
+	margin-bottom: 4em;
+}
+
+.latest-posts-list {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 10em;
+	font-size: 0.9em;
+	flex: 1;
+}
+
+.latest-posts-list li {
+	margin-bottom: 0.9em;
+}
+
+.postlist-link {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+.postlist-link:hover {
+	text-decoration: underline;
+}
+
+.postlist-post-date {
+	font-size: 0.8em;
+	font-style: italic;
+	opacity: 0.4;
+}
+
+.post-date {
+	display: block;
+	font-size: 1rem;
+	line-height: 2rem;
+	font-family: var(--font-body);
+	opacity: 0.4;
+}
+
+.social-links-wrapper {
+	margin-bottom: 1em;
+}
+
+.social-links-wrapper ul {
+	list-style: none;
+	padding-left: 0;
+	font-size: 0.8em;
+	display: flex;
+}
+
+.social-links-wrapper li {
+	margin-right: 1em;
+}
+
+.social-links-wrapper img {
+	width: auto;
+}
+
+.social-links-wrapper svg > path {
+	fill: var(--color-font-base);
+	transition: fill 0.3s;
+}
+
+.theme-btn-wrapper {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.theme-btn-wrapper::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 70px solid var(--color-font-base);
+	border-left: 70px solid transparent;
+	z-index: 1;
+}
+
+.theme-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: transparent;
+	border: none;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.theme-btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.theme-btn svg {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.moon-icon {
+	opacity: 1;
+	transform: scale(0.7) rotate(-35deg);
+	fill: var(--color-background);
+	stroke: var(--color-background);
+}
+
+.sun-icon {
+	opacity: 0;
+	fill: var(--color-font-base);
+	stroke: var(--color-font-base);
+}
+
+.dark .moon-icon {
+	opacity: 0;
+}
+
+.dark .sun-icon {
+	opacity: 1;
+}
+
+.webgl-canvas {
+	width: 100%;
+}
+
+/****************************** MEDIA *************************************/
+
+@media only screen and (min-width: 992px) {
+	main {
+		width: 85%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	main {
+		width: 70%;
+	}
+}

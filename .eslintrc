@@ -1,0 +1,10 @@
+{
+	"extends": "airbnb",
+	"rules": {
+		"no-console": 2
+	},
+	"globals": {
+		"FontFaceObserver": "readonly",
+		"document": "readonly"
+	}
+}

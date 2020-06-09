@@ -1,0 +1,189 @@
+/*
+Name:   Duotone Light
+Author: Simurai, adapted from DuoTone themes for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+Conversion: Bram de Haan (http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-morning-light.css)
+Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
+*/
+
+.light code,
+.light code[class*="language-"],
+.light pre[class*="language-"] {
+	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+		"Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+		"Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+		"Courier New", Courier, monospace;
+	font-size: 14px;
+	line-height: 1.375;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	background: #faf8f5;
+	color: #728fcb;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.light pre > code[class*="language-"] {
+	font-size: 1em;
+}
+
+.light pre[class*="language-"]::-moz-selection,
+.light pre[class*="language-"] ::-moz-selection,
+.light code[class*="language-"]::-moz-selection,
+.light code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #faf8f5;
+}
+
+.light pre[class*="language-"]::selection,
+.light pre[class*="language-"] ::selection,
+.light code[class*="language-"]::selection,
+.light code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #faf8f5;
+}
+
+/* Code blocks */
+.light pre[class*="language-"] {
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+}
+
+/* Inline code */
+.light :not(pre) > code[class*="language-"] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+}
+
+.light .token.comment,
+.light .token.prolog,
+.light .token.doctype,
+.light .token.cdata {
+	color: #b6ad9a;
+}
+
+.light .token.punctuation {
+	color: #b6ad9a;
+}
+
+.light .token.namespace {
+	opacity: 0.7;
+}
+
+.light .token.tag,
+.light .token.operator,
+.light .token.number {
+	color: #063289;
+}
+
+.light .token.property,
+.light .token.function {
+	color: #b29762;
+}
+
+.light .token.tag-id,
+.light .token.selector,
+.light .token.atrule-id {
+	color: #2d2006;
+}
+
+.light code.language-javascript,
+.light .token.attr-name {
+	color: #896724;
+}
+
+.light code.language-css,
+.light code.language-scss,
+.light .token.boolean,
+.light .token.string,
+.light .token.entity,
+.light .token.url,
+.light .language-css .token.string,
+.light .language-scss .token.string,
+.light .style .token.string,
+.light .token.attr-value,
+.light .token.keyword,
+.light .token.control,
+.light .token.directive,
+.light .token.unit,
+.light .token.statement,
+.light .token.regex,
+.light .token.atrule {
+	color: #728fcb;
+}
+
+.light .token.placeholder,
+.light .token.variable {
+	color: #93abdc;
+}
+
+.light .token.deleted {
+	text-decoration: line-through;
+}
+
+.light .token.inserted {
+	border-bottom: 1px dotted #2d2006;
+	text-decoration: none;
+}
+
+.light .token.italic {
+	font-style: italic;
+}
+
+.light .token.important,
+.light .token.bold {
+	font-weight: bold;
+}
+
+.light .token.important {
+	color: #896724;
+}
+
+.light .token.entity {
+	cursor: help;
+}
+
+.light pre > code.highlight {
+	outline: 0.4em solid #896724;
+	outline-offset: 0.4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.light .line-numbers .line-numbers-rows {
+	border-right-color: #ece8de;
+}
+
+.light .line-numbers-rows > span:before {
+	color: #cdc4b1;
+}
+
+/* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
+.light .line-highlight {
+	background: rgba(45, 32, 6, 0.2);
+	background: -webkit-linear-gradient(
+		left,
+		rgba(45, 32, 6, 0.2) 70%,
+		rgba(45, 32, 6, 0)
+	);
+	background: linear-gradient(
+		to right,
+		rgba(45, 32, 6, 0.2) 70%,
+		rgba(45, 32, 6, 0)
+	);
+}

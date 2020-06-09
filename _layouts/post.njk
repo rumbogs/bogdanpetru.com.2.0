@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<section>
+    <h1>
+        <time class="post-date">{{post.data.date | toDate}}</time>
+        {{ title }}
+    </h1>
+    
+
+    {{ content | safe }}
+
+    <p><a href="{{ '/' | url }}">← Home</a></p>
+<section>

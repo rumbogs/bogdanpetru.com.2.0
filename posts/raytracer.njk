@@ -1,0 +1,27 @@
+---
+title: Raytracing
+description: Raytracing in Rust finally
+date: 2019-05-28
+tags:
+  - post
+layout: post.njk
+---
+
+<p>I started to build a raytracer in Rust based on Peter Shirley's very nice tutorial Raytracing in a Week-End.</p>
+
+<p>I had a bit of a headache while implementing the noise texture which turned out to be a simple rounding error.
+Debugging is a lot more difficult on a graphic engine since really small errors result in totally different images.</p>
+
+<p>Also while implementing the BVH the render kept getting slower, and then I found out about <code>cargo run --release</code>
+which does a whole bunch of code optimizations and runs a lot faster, it only takes a bit longer to compile but it's
+worth it.</p>
+
+<p>Anyway, after finishing this, I couldn't help but feel that WebGL could be a really good candidate to run these
+sorts of computations. It provides realtime feedback instead of waiting for an image file to be written to disk,
+this way you can see results a lot faster.</p>
+
+<div class="canvas-wrapper">
+  <canvas class="webgl-canvas" />
+</div>
+
+

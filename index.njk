@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+
+{% set path %}assets/img/{{ filename }}{% endset %}
+{% set posts = collections.post | reverse %}
+
+{%- for post in posts.slice(0, 1) -%}
+	<section>
+		<div class="post-wrapper">
+			
+			<h1>
+				<time class="post-date">{{post.data.date | toDate}}</time>
+				{{post.data.title}}
+			</h1>
+			
+			{{ post.templateContent | safe }}
+		</div>
+	</section>
+{%- endfor -%}
